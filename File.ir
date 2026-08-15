@@ -1,0 +1,11 @@
+; BedRock-IR
+; --target ir
+
+    Rdf %LED_ADDR, 2415919616
+    Go main_entry_0
+blink_led:
+    Bri 1, %LED_ADDR
+    Ret 
+main_entry_0:
+    Int 3, blink_led
+    Halt 

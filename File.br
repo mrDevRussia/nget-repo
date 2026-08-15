@@ -1,0 +1,9 @@
+root LED_ADDR = 0x90000200;
+
+int blink_led {
+poke(LED_ADDR, 1);
+
+}
+
+int_enable(3, blink_led);
+
